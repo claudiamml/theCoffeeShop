@@ -1,0 +1,37 @@
+.carousel-inner {
+	background:		black;
+	border-top:		darken(@accentColor, 20%) 1px solid;
+	border-bottom:	darken(@accentColor, 20%) 1px solid;
+	box-shadow:		0 5px 20px 0 rgba(0, 0, 0, 0.75);
+
+	> .item > img,
+	> .item > a > img {
+	margin: 0 auto;
+	height: 360px;
+	}
+
+	@media (min-width: @screen-sm-min) and (max-width: 899px) {
+	max-width: auto;
+	height: 300px;
+		> .item > img,
+		> .item > a > img {
+		margin: 0 auto;
+		height: 300px;
+		}
+	}
+
+
+	@media (min-width: 500px) and (max-width: @screen-sm-min) {
+	max-width: auto;
+	max-height: auto;
+		> .item > img,
+		> .item > a > img {
+		margin: 0 auto;
+		height: 250px;
+		}
+	}
+}
+
+.carousel-indicators {
+	bottom: -50px;
+}
